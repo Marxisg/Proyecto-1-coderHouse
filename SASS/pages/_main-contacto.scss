@@ -1,0 +1,22 @@
+@use "../utilities/variable";
+
+
+.fondo-contacto {
+   background-image: url(../assets/beers.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    .contacto {
+        color: variable.$contac-letter-color;
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 2%;
+        padding-right: 2%;
+        padding-bottom: 2%;
+        padding-left: 2%;
+        .form-control {
+            width: 50%;
+        }
+
+    }
+}

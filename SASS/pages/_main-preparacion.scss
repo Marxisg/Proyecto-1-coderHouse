@@ -1,0 +1,43 @@
+@use "../utilities/mixin";
+
+main {
+
+    .definicion-preparacion {
+        padding-bottom: 25px;
+    }
+
+    .preparacion {
+        @include mixin.flex (wrap);
+        padding-bottom: 20px;
+
+        .pasos {
+            img {
+                width: 200px;
+                float: left;
+                padding: 15px;
+            }
+        }
+    }
+
+    .video-preparacion {
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+
+        .video1,
+        .video2 {
+            video {
+                width: 35%;
+            }
+        }
+        .video2 {
+            video {
+                height: 300px;
+                
+            }
+        }
+        text-align: center;
+    }
+
+    
+}

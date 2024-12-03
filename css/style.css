@@ -1,376 +1,285 @@
-/*font family*/
-
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Tenor+Sans&display=swap');
-
-/*reseteo*/
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-
-body {
-    font-family: "Tenor Sans", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-weight: 700;
-    background-color: rgba(7, 117, 102, 0.838);
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Tenor+Sans&display=swap");
 h1 {
-    text-transform: capitalize;
-    color: darkorange;
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-    padding: 20px;
+  text-transform: capitalize;
+  color: darkorange;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
 }
 
 h2 {
-    color: rgb(84, 3, 3);
-    text-align: center;
-    font-weight: bolder;
-    font-size: 30px;
-    padding: 10px;
+  color: rgb(84, 3, 3);
+  text-align: center;
+  font-weight: bolder;
+  font-size: 30px;
+  padding: 10px;
 }
 
 h3 {
-    color: rgb(240, 230, 54);
-    font-size: 20px;
-    font-weight: bolder;
-    margin-left: 10px;
-    padding: 5px;
+  color: rgb(240, 230, 54);
+  font-size: 20px;
+  font-weight: bolder;
+  margin-left: 10px;
+  padding: 5px;
 }
 
 h4 {
-    color: rgb(240, 230, 54);
-    text-decoration: underline;
-    font-size: 18px;
-    font-weight: bolder;
-    text-align: center;
-    padding: 5px;
+  color: rgb(240, 230, 54);
+  text-decoration: underline;
+  font-size: 18px;
+  font-weight: bolder;
+  text-align: center;
+  padding: 5px;
+}
+
+.pagina-principal .padre-grid img.grid,
+.pagina-principal .padre-grid img.grid-1,
+.pagina-principal .padre-grid img.grid-2,
+.pagina-principal .padre-grid img.grid-3 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Tenor Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-weight: 700;
+  background-color: rgba(7, 117, 102, 0.838);
 }
 
 p {
-    text-align: justify;
-    margin: 10px;
+  text-align: justify;
+  margin: 10px;
+  padding-inline: 2px;
 }
 
-/*header
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 70px;
-    background-color: rgba(250, 153, 94, 0.912);
-    padding: 5px;
+header .container-fluid {
+  background-color: coral;
+  height: 80px;
+  font-weight: bolder;
+}
+header .container-fluid img.logo-empresa {
+  width: 60px;
+}
+header .navbar {
+  padding: 0;
+}
+header .navbar-nav :hover {
+  background-color: gold;
+  color: whitesmoke;
 }
 
-.logo-empresa a img {
-    width: 110px;
-    padding: 25px;
+.pie-de-pagina {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: coral;
 }
-
-
-lista de navegacion
-.menu ul {
-    display: flex;
-    list-style-type: none;
+.pie-de-pagina .redes-sociales a {
+  text-decoration: none;
 }
-
-.menu ul li a {
-    color: black;
-    font-weight: bolder;
-    display: block;
-    padding: 15px;
-    text-decoration-line: none;
+.pie-de-pagina .redes-sociales i {
+  color: rgb(241, 236, 231);
+  font-size: 30px;
+  font-weight: 500;
+  margin-left: 15px;
 }
-
-.menu ul li a:hover {
-    background-color: gold;
+.pie-de-pagina .lado-derecho img {
+  width: 150px;
+  height: 120px;
 }
-*/
-
-
-/*Header nuevo*/
-
-.logo-empresa {
-    width: 60px;
-}
-
-.container-fluid {
-    background-color: coral;
-    height: 80px;
-    font-weight: bolder;
-}
-
-.navbar {
-    padding: 0;
-}
-
-.navbar-nav :hover {
-    background-color: gold;
-    color: whitesmoke;
-}
-
-
-/*main*/
-.principal {
-    text-align: center;
-}
-
-.principal p {
-    text-align: justify;
-    margin: 10px;
-    padding-inline: 2px;
-    padding-bottom: 50px;
+.pie-de-pagina .lado-derecho span {
+  display: flex;
+  align-items: center;
+  color: rgb(21, 21, 21);
+  font-weight: bold;
+  font-size: 10px;
+  float: left;
 }
 
 .pagina-principal {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
+}
+.pagina-principal .principal p {
+  padding-bottom: 50px;
+}
+.pagina-principal .padre-grid {
+  display: grid;
+  width: 50vw;
+  margin: auto;
+  gap: 10px;
+  background-color: rgb(236, 119, 9);
+  border: 5px solid rgb(236, 119, 9);
+}
+.pagina-principal .padre-grid .box-grid-1 {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+.pagina-principal .padre-grid .box-grid {
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+.pagina-principal .padre-grid .box-grid-2 {
+  grid-column: 3/5;
+  grid-row: 1/3;
+}
+.pagina-principal .padre-grid .box-grid-3 {
+  grid-column: 1/5;
+  grid-row: 3/4;
+}
+main .definicion {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+main .definicion .imagenes-definicion img {
+  width: 200px;
+  height: 200px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+main .definicion .tipos-de-cerveza img {
+  width: 30%;
+}
+main .definicion .tipos-de-cerveza ul {
+  text-align: justify;
+  padding-top: 10px;
+}
+main .caja-tipo-cerveza {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+main .caja-tipo-cerveza .tipo img {
+  width: 200px;
+  float: left;
+  padding: 10px;
 }
 
-/*grid pagina principal*/
-
-.padre-grid {
-    display: grid;
-    width: 50vw;
-    margin: auto;
-    gap: 10px;
-    background-color: rgb(236, 119, 9);
-    border: 5px solid rgb(236, 119, 9);
+main .principal-equipos {
+  text-align: center;
+}
+main .principal-equipos .imagen-equipo img {
+  width: 35%;
+  border: solid 2px rgb(167, 245, 41);
+  margin-top: 25px;
+}
+main .caja-equipos {
+  padding-top: 45px;
+}
+main .miscelaneos {
+  padding-top: 35px;
+}
+main .miscelaneos ul li {
+  padding: 10px;
+}
+main .miscelaneos .imagen-miscelaneos {
+  padding: 20px 0px 35px 0px;
+  text-align: center;
+}
+main .iframe {
+  padding: 20px;
+  text-align: center;
 }
 
-.box-grid-1 {
-    grid-column: 1/3;
-    grid-row: 1/2;
+main .definicion-preparacion {
+  padding-bottom: 25px;
 }
-
-.box-grid {
-    grid-column: 1/3;
-    grid-row: 2/3;
+main .preparacion {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
 }
-
-.box-grid-2 {
-    grid-column: 3/5;
-    grid-row: 1/3;
+main .preparacion .pasos img {
+  width: 200px;
+  float: left;
+  padding: 15px;
 }
-
-.box-grid-3 {
-    grid-column: 1/5;
-    grid-row: 3/4;
+main .video-preparacion {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  text-align: center;
 }
-
-.grid,
-.grid-1,
-.grid-2,
-.grid-3 {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+main .video-preparacion .video1 video,
+main .video-preparacion .video2 video {
+  width: 35%;
 }
-
-.definicion {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-}
-
-.imagenes-definicion img {
-    width: 200px;
-    height: 200px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-
-}
-
-.tipos-de-cerveza ul {
-    text-align: justify;
-    padding-top: 10px;
-
-}
-
-.tipos-de-cerveza img {
-    width: 30%
-}
-
-.tipo img {
-    width: 200px;
-}
-
-.caja-tipo-cerveza {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 20px;
-}
-
-.tipo img {
-    float: left;
-    padding: 10px;
-}
-
-.principal-equipos{
-    text-align: center;
-}
-.imagen-equipo img{
-    width: 35%;
-    border: solid 2px rgb(167, 245, 41);   
-}
-
-.caja-equipos{
-    padding-top: 35px;
-}
-
-.miscelaneos {
-    padding-top: 35px;
-}
-
-.miscelaneos ul li {
-    padding: 10px;
-}
-.imagen-miscelaneos{
-    text-align: center;
-    padding: 20px 0px 35px 0px;
-}
-
-.iframe {
-    padding: 20px;
-    text-align: center;
+main .video-preparacion .video2 video {
+  height: 300px;
 }
 
 .fondo-contacto {
-    background-image: url(../assets/beers.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+  background-image: url(../assets/beers.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.fondo-contacto .contacto {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+}
+.fondo-contacto .contacto .form-control {
+  width: 50%;
 }
 
-
-.contacto {
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    padding-top: 2%;
-    padding-right: 2%;
-    padding-bottom: 2%;
-    padding-left: 2%;
-}
-
-.form-control {
-    width: 50%;
-}
-
-/* .formulario-contacto{
-    display: flex;
-    align-items: baseline;
-    flex-direction: column;
-       
-}
-.contacto label {
-    font-weight: bolder;
-    
-} */
-
-
-/*footer*/
-
-.pie-de-pagina {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgba(250, 153, 94, 0.912)
-}
-
-.redes-sociales a {
-    text-decoration: none;
-}
-
-.redes-sociales i {
-    color: rgb(241, 236, 231);
-    font-size: 30px;
-    font-weight: 500;
-    margin-left: 15px;
-}
-
-.lado-derecho img {
-    width: 150px;
-    height: 120px;
-}
-
-.lado-derecho span {
-    display: flex;
-    align-items: center;
-    color: rgb(21, 21, 21);
-    font-weight: bold;
-    font-size: 10px;
-    float: left;
-}
-
-/* Medidas Queries*/
 @media screen and (max-width: 1024px) {
-    body {
-        background-color: aquamarine;
-    }
-
-    h3 {
-        color: rgb(11, 129, 2);
-    }
-
-    h4 {
-        color: rgb(11, 129, 2);
-
-    }
-    .navbar-nav{
-        background-color: rgba(250, 153, 94, 0.912);
-    }
-
-
-    .caja-tipo-cerveza {
-        display: flex;
-        padding-top: 20px;
-    }
-
-    .tipo img {
-        float: unset;
-        padding: 10px;
-    }
-    .iframe {
-        padding: 5px;
-        text-align: center;
-    }
-
+  body {
+    background-color: aquamarine;
+  }
+  h3,
+  h4 {
+    color: rgb(11, 129, 2);
+  }
+  .navbar-nav {
+    background-color: rgba(250, 153, 94, 0.912);
+  }
+  .caja-tipo-cerveza {
+    display: flex;
+    padding-top: 20px;
+  }
+  .fondo-contacto .contacto {
+    padding-bottom: 35%;
+  }
 }
-
 @media screen and (max-width: 768px) {
-    body {
-        background-color: rgb(208, 255, 127);
-    }
-
-    h3 {
-        color: rgb(5, 59, 104);
-    }
-
-    h4 {
-        color: rgb(5, 59, 104);
-
-    }
-    .navbar-nav{
-        background-color: rgba(250, 153, 94, 0.912);
-    }
-
-    .caja-tipo-cerveza {
-        display: flex;
-        padding-top: 20px;
-    }
-
-    .tipo img {
-        float: unset;
-        padding: 10px;
-    }
-    .iframe {
-        padding: 2px;
-        text-align: center;
-    }
+  body {
+    background-color: rgb(208, 255, 127);
+  }
+  h3,
+  h4 {
+    color: rgb(5, 59, 104);
+  }
+  .navbar-nav {
+    background-color: rgba(250, 153, 94, 0.912);
+  }
+  .caja-tipo-cerveza {
+    display: flex;
+    padding-top: 20px;
+  }
+  .tipo img,
+  .preparacion img {
+    float: unset !important;
+    padding: 10px !important;
+  }
+  .iframe {
+    padding: 2px !important;
+    text-align: center !important;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */

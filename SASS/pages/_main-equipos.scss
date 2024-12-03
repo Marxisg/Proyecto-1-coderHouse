@@ -1,0 +1,39 @@
+main {
+
+    .principal-equipos {
+        text-align: center;
+      
+
+        .imagen-equipo {
+            img {
+                width: 35%;
+                border: solid 2px rgb(167, 245, 41);
+                margin-top: 25px;
+            }
+
+        }
+    }
+
+    .caja-equipos {
+        padding-top: 45px;
+    }
+
+    .miscelaneos {
+        padding-top: 35px;
+
+        ul li {
+            padding: 10px;
+        }
+
+        .imagen-miscelaneos {
+            padding: 20px 0px 35px 0px;
+            text-align: center;
+        }
+
+    }
+
+    .iframe {
+        padding: 20px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,35 @@
+@use "../utilities/variable";
+@use "../utilities/extend";
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Tenor+Sans&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: variable.$font-princiapl;
+    font-weight: 500;
+    font-style: normal;
+    font-weight: 700;
+    background-color: variable.$bg-principal;
+}
+p {
+    text-align: justify;
+    margin: 10px;
+    padding-inline: 2px;
+}
+h1 {
+    @extend %title-type-h1;
+}
+h2 {
+    @extend %title-type-h2;
+}
+h3 {
+    @extend %title-type-h3;
+}
+h4 {
+    @extend %title-type-h4;
+}

@@ -1,0 +1,62 @@
+@use "../utilities/variable";
+
+
+@media screen and (max-width: 1024px) {
+    body {
+        background-color: variable.$bg-principal-table;
+    }
+
+    h3,
+    h4 {
+        color: rgb(11, 129, 2);
+    }
+
+    .navbar-nav {
+        background-color: rgba(250, 153, 94, 0.912);
+    }
+
+    .caja-tipo-cerveza {
+        display: flex;
+        padding-top: 20px;
+    }
+
+     .fondo-contacto {
+        .contacto {
+            padding-bottom: 35%;
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: variable.$bg-principal-phone;
+    }
+
+    h3,
+    h4 {
+        color: rgb(5, 59, 104);
+    }
+
+    .navbar-nav {
+        background-color: rgba(250, 153, 94, 0.912);
+    }
+
+    .caja-tipo-cerveza {
+        display: flex;
+        padding-top: 20px;
+    }
+
+    .tipo,
+    .preparacion {
+        img {
+            float: unset !important;
+            padding: 10px !important;
+        }
+    }
+
+    .iframe {
+        padding: 2px !important;
+        text-align: center !important;
+    }
+}

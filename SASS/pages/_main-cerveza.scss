@@ -1,0 +1,43 @@
+@use "../utilities/mixin";
+
+main {
+    .definicion {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+
+        .imagenes-definicion {
+            img {
+                width: 200px;
+                height: 200px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+
+        }
+
+        .tipos-de-cerveza {
+            img {
+                width: 30%;
+            }
+
+            ul {
+                text-align: justify;
+                padding-top: 10px;
+            }
+        }
+    }
+
+    .caja-tipo-cerveza {
+        @include mixin.flex (wrap);
+        padding-top: 20px;
+
+        .tipo {
+            img {
+                width: 200px;
+                float: left;
+                padding: 10px;
+            }
+        }
+    }
+}

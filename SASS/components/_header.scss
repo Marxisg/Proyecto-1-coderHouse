@@ -1,0 +1,23 @@
+@use "../utilities/variable";
+
+header {
+    .container-fluid {
+        background-color: variable.$bg-header-foot-color;
+        height: 80px;
+        font-weight: bolder;
+
+        img.logo-empresa {
+            width: 60px;
+        }
+    }
+
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar-nav :hover {
+        background-color: gold;
+        color: whitesmoke;
+    }
+
+}

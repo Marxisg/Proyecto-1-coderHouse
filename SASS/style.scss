@@ -1,0 +1,20 @@
+
+@use "./utilities/variable";
+@use "./utilities/extend";
+
+@use "./utilities/mixin";
+
+@use "./global/reset";
+
+@use "./components/header";
+@use "./components/footer";
+
+@use "./pages/main-index";
+@use "./pages/main-cerveza";
+@use "./pages/main-equipos";
+@use "./pages/main-preparacion";
+@use "./pages/main-contacto";
+
+@use "./utilities/media-queries";
+
+

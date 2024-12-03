@@ -1,0 +1,37 @@
+@use "../utilities/variable";
+
+.pie-de-pagina {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: variable.$bg-header-foot-color;
+
+  .redes-sociales {
+    a {
+      text-decoration: none;
+    }
+
+    i {
+      color: rgb(241, 236, 231);
+      font-size: 30px;
+      font-weight: 500;
+      margin-left: 15px;
+    }
+  }
+
+  .lado-derecho {
+    img {
+      width: 150px;
+      height: 120px;
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+      color: rgb(21, 21, 21);
+      font-weight: bold;
+      font-size: 10px;
+      float: left;
+    }
+  }
+}
