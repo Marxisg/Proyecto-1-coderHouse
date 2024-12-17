@@ -20,7 +20,7 @@
         padding-top: 20px;
     }
 
-     .fondo-contacto {
+    .fondo-contacto {
         .contacto {
             padding-bottom: 35%;
         }
@@ -58,5 +58,12 @@
     .iframe {
         padding: 2px !important;
         text-align: center !important;
+    }
+
+    .pie-de-pagina {
+        .lado-derecho {
+            display: flex;
+            align-items: center;
+        }
     }
 }

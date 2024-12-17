@@ -12,6 +12,10 @@ main {
                 height: 200px;
                 padding-top: 15px;
                 padding-bottom: 15px;
+                transition: transform 0.3s ease-in-out;
+                &:hover{
+                    transform: scale(1.1);
+                }
             }
 
         }
@@ -19,6 +23,10 @@ main {
         .tipos-de-cerveza {
             img {
                 width: 30%;
+                transition: transform 0.3s ease-in-out;
+                &:hover{
+                    transform: scale(1.1);
+                }
             }
 
             ul {

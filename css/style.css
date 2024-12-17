@@ -98,12 +98,9 @@ header .navbar-nav :hover {
   height: 120px;
 }
 .pie-de-pagina .lado-derecho span {
-  display: flex;
-  align-items: center;
   color: rgb(21, 21, 21);
   font-weight: bold;
   font-size: 10px;
-  float: left;
 }
 
 .pagina-principal {
@@ -136,6 +133,19 @@ header .navbar-nav :hover {
   grid-column: 1/5;
   grid-row: 3/4;
 }
+.pagina-principal .padre-grid img.grid,
+.pagina-principal .padre-grid img.grid-1,
+.pagina-principal .padre-grid img.grid-2,
+.pagina-principal .padre-grid img.grid-3 {
+  transition: transform 0.5s ease-in-out;
+}
+.pagina-principal .padre-grid img.grid:hover,
+.pagina-principal .padre-grid img.grid-1:hover,
+.pagina-principal .padre-grid img.grid-2:hover,
+.pagina-principal .padre-grid img.grid-3:hover {
+  transform: scale(1.1);
+}
+
 main .definicion {
   display: flex;
   text-align: center;
@@ -146,9 +156,17 @@ main .definicion .imagenes-definicion img {
   height: 200px;
   padding-top: 15px;
   padding-bottom: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+main .definicion .imagenes-definicion img:hover {
+  transform: scale(1.1);
 }
 main .definicion .tipos-de-cerveza img {
   width: 30%;
+  transition: transform 0.3s ease-in-out;
+}
+main .definicion .tipos-de-cerveza img:hover {
+  transform: scale(1.1);
 }
 main .definicion .tipos-de-cerveza ul {
   text-align: justify;
@@ -172,6 +190,11 @@ main .principal-equipos .imagen-equipo img {
   width: 35%;
   border: solid 2px rgb(167, 245, 41);
   margin-top: 25px;
+  transition: transform 0.4s, opacity 0.4s ease-in-out;
+}
+main .principal-equipos .imagen-equipo img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
 }
 main .caja-equipos {
   padding-top: 45px;
@@ -279,6 +302,10 @@ main .video-preparacion .video2 video {
   .iframe {
     padding: 2px !important;
     text-align: center !important;
+  }
+  .pie-de-pagina .lado-derecho {
+    display: flex;
+    align-items: center;
   }
 }
 

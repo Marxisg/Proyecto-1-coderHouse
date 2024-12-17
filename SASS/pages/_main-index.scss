@@ -41,6 +41,10 @@
         img.grid-2,
         img.grid-3 {
             @extend %image-size-grip;
+            transition: transform 0.5s ease-in-out; 
+            &:hover {
+                transform: scale(1.1);
+            }
         }
     }
     padding-bottom: 20px;
